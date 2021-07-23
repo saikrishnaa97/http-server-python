@@ -3,3 +3,4 @@ deploy:
   - okteto build -t registry.cloud.okteto.net/saikrishnaa97/http-stub-server:latest ./
   - kubectl apply -f stub_deploy.yaml -n saikrishnaa97
   - kubectl apply -f stub_svc.yaml -n saikrishnaa97
+  - kubectl apply -f ingress.yaml -n saikrishnaa97
