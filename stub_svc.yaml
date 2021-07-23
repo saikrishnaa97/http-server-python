@@ -8,8 +8,8 @@ spec:
     app: "http-server"
   ports:
   - protocol: TCP
-    port: 8080
-    targetPort: 8080
+    port: 5000
+    targetPort: 5000
     name: http2
   - protocol: TCP
     port: 8091
