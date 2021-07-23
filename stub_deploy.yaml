@@ -9,10 +9,6 @@ spec:
   replicas: 1
   template:
     metadata:
-      annotations:
-        prometheus.io/path: /metrics
-        prometheus.io/port: "8000"
-        prometheus.io/scrape: "true"
       labels:
         app: http-server
     spec:
