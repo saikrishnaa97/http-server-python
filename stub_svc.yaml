@@ -13,11 +13,3 @@ spec:
     port: 8080
     targetPort: 8080
     name: http2
-  - protocol: TCP
-    port: 8091
-    targetPort: 8000
-    name: metrics
-  - protocol: TCP
-    port: 8443
-    targetPort: 8443
-    name: application-https
