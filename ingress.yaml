@@ -10,4 +10,4 @@ spec:
       paths:
       - backend:
           serviceName: notify-stub-service
-          servicePort: 5000
+          servicePort: 8080
