@@ -24,7 +24,7 @@ spec:
         - name: HTTP_SERVICE
           value: "http2-server-service"
         ports:
-        - containerPort: 5000
+        - containerPort: 8080
           name: http
         - containerPort: 8000
           name: metrics
