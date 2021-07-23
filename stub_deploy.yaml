@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: python37-http2-nf-server
-        image: "registry.cloud.okteto.net/http-stub-server:latest"
+        image: "registry.cloud.okteto.net/saikrishnaa97/http-stub-server:latest"
         imagePullPolicy: Always
         env:
         - name: HTTP_SERVICE
