@@ -11,4 +11,3 @@ spec:
       - backend:
           serviceName: notify-stub-service
           servicePort: 5000
-        path: /
