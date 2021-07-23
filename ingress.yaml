@@ -9,6 +9,6 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: notify-stub-service.saikrishnaa97
+          serviceName: notify-stub-service
           servicePort: 5000
         path: /
