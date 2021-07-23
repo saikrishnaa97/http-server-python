@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http2-server
+spec:
+  selector:
+    matchLabels:
+      app: http-server  
+  replicas: 1
+  template:
+    metadata:
+      annotations:
+        prometheus.io/path: /metrics
+        prometheus.io/port: "8000"
+        prometheus.io/scrape: "true"
+      labels:
+        app: http-server
+    spec:
+      containers:
+      - name: python37-http2-nf-server
+        image: "http-stub-server:latest"
+        imagePullPolicy: Always
+        env:
+        - name: HTTP_SERVICE
+          value: "http2-server-service"
+        ports:
+        - containerPort: 8080
+          name: http
+        - containerPort: 8000
+          name: metrics
+        - containerPort: 8443
+          name: https
+      restartPolicy: Always
