@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Service
 apiVersion: v1
 annotations:
-    dev.okteto.com/auto-ingress: "domain"
+    dev.okteto.com/auto-ingress: "true"
 metadata:
   name: "notify-stub-service"
 spec:
