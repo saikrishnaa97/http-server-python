@@ -1,0 +1,5 @@
+icon: https://avatars.githubusercontent.com/u/15671549?v=4
+deploy:
+  - okteto build -t http-stub-server:${OKTETO_GIT_COMMIT} ./
+  - kubectl apply -f stub_deploy.yaml -n saikrishnaa97
+  - kubectl apply -f stub_svc.yaml -n saikrishnaa97
