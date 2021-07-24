@@ -424,6 +424,6 @@ if __name__ == '__main__':
 #         hostName='0.0.0.0'
     if len(sys.argv) > 1:
         if sys.argv[1] == 'store':
-            app_with_storage.run(host=hostName, port=8080)
+            app_with_storage.run(host='0.0.0.0', port=8080)
             sys.exit(1)
-    app_no_storage.run(host=hostName, port=8080)
+    app_no_storage.run(host='0.0.0.0', port=8080)
