@@ -418,10 +418,10 @@ if __name__ == '__main__':
     ssl_context.set_alpn_protocols(['h2'])
     #app.run(host='127.0.0.1', port=80, ssl=ssl_context)
     start_http_server(8000)
-    if 'IPV6_SUPPORT' in os.environ.keys():
-        hostName='::'
-    else:
-        hostName='0.0.0.0'
+#     if 'IPV6_SUPPORT' in os.environ.keys():
+#         hostName='::'
+#     else:
+#         hostName='0.0.0.0'
     if len(sys.argv) > 1:
         if sys.argv[1] == 'store':
             app_with_storage.run(host=hostName, port=8080)
