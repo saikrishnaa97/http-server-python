@@ -412,9 +412,9 @@ if __name__ == '__main__':
     )
     ssl_context.options |= ssl.OP_NO_TLSv1 | ssl.OP_NO_TLSv1_1
     ssl_context.set_ciphers('ECDHE+AESGCM')
-    ssl_context.load_cert_chain(
-        certfile='/src/domain.crt', keyfile='/src/domain.key',
-    )
+    #ssl_context.load_cert_chain(
+    #    certfile='/src/domain.crt', keyfile='/src/domain.key',
+    #)
     ssl_context.set_alpn_protocols(['h2'])
     #app.run(host='127.0.0.1', port=80, ssl=ssl_context)
     start_http_server(8000)
